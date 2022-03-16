@@ -1,4 +1,5 @@
 public class monkey1 {
+    
     private String name;
     private int arms;
     private String Color;
