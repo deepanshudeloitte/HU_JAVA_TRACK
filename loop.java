@@ -1,4 +1,4 @@
-import java.util.*;10
+import java.util.*;
 public class loop {
     public static void main(String[] args) {
         int i,j,k;
