@@ -63,12 +63,17 @@ public class string {
         if (isInterleaved(A, B, C))
             System.out.println("Valid Shuffle");
         else
-            System.out.println("Inalid Shuffle");
+            System.out.println("Invalid Shuffle");
     }
 
 
     public static void main(String[] args)
     {
-        test("gid", "Hash", "Hgaidhs");
+        Scanner scn = new Scanner(System.in);
+        String A =scn.nextLine();
+        String B =scn.nextLine();
+        String C =scn.nextLine();
+
+        test(A,B,C);
     }
 }
