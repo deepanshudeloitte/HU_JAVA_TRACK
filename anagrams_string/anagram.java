@@ -54,5 +54,6 @@ public class anagram {
         String str1=scn.nextLine();
         String str2=scn.nextLine();
         test(str1,str2);
+   
     }
 }
