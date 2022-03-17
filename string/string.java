@@ -5,56 +5,49 @@ import java.lang.*;
 public class string {
     static boolean isInterleaved(String A, String B,String C){
 
-        int M = A.length(), N = B.length();
+        int m = A.length(), n = B.length();
 
-        boolean IL[][] = new boolean[M + 1][N + 1];
-        if ((M + N) != C.length())
+        boolean b[][] = new boolean[m + 1][n + 1];
+        if ((m + n) != C.length())
             return false;
 
-        for(int i = 0; i <= M; i++)
+        for(int i = 0; i <= m; i++)
         {
-            for(int j = 0; j <= N; j++)
+            for(int j = 0; j <= n; j++)
             {
                 if (i == 0 && j == 0)
-                    IL[i][j] = true;
+                    b[i][j] = true;
 
                 else if (i == 0)
                 {
                     if (B.charAt(j - 1) ==
                             C.charAt(j - 1))
-                        IL[i][j] = IL[i][j - 1];
+                        b[i][j] = b[i][j - 1];
                 }
 
 
                 else if (j == 0)
                 {
-                    if (A.charAt(i - 1) ==
-                            C.charAt(i - 1))
-                        IL[i][j] = IL[i - 1][j];
+                    if (A.charAt(i - 1) == C.charAt(i - 1))
+                        b[i][j] = b[i - 1][j];
                 }
 
 
-                else if (A.charAt(i - 1) ==
-                        C.charAt(i + j - 1) &&
-                        B.charAt(j - 1) !=
-                                C.charAt(i + j - 1))
-                    IL[i][j] = IL[i - 1][j];
+                else if (A.charAt(i - 1) == C.charAt(i + j - 1) && B.charAt(j - 1) != C.charAt(i + j - 1))
+                    b[i][j] = b[i - 1][j];
 
 
-                else if (A.charAt(i - 1) !=
-                        C.charAt(i + j - 1) &&
-                        B.charAt(j - 1) ==
-                                C.charAt(i + j - 1))
-                    IL[i][j] = IL[i][j - 1];
+                else if (A.charAt(i - 1) != C.charAt(i + j - 1) && B.charAt(j - 1) == C.charAt(i + j - 1))
+                    b[i][j] = b[i][j - 1];
                 else if (A.charAt(i - 1) ==
                         C.charAt(i + j - 1) &&
                         B.charAt(j - 1) ==
                                 C.charAt(i + j - 1))
-                    IL[i][j] = (IL[i - 1][j] ||
-                            IL[i][j - 1]);
+                    b[i][j] = (b[i - 1][j] ||
+                            b[i][j - 1]);
             }
         }
-        return IL[M][N];
+        return b[m][n];
     }
 
 
@@ -70,10 +63,10 @@ public class string {
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
-        String A =scn.nextLine();
-        String B =scn.nextLine();
-        String C =scn.nextLine();
+        String a =scn.nextLine();
+        String b =scn.nextLine();
+        String c=scn.nextLine();
 
-        test(A,B,C);
+        test(a,b,c);
     }
 }
