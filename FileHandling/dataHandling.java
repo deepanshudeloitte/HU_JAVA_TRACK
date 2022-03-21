@@ -39,16 +39,6 @@ class Candidate {
         this.btRgNo = btechRegNo;
         this.rank = rank;
 
-
-
-
-
-
-
-
-
-
-
     }
 
     public String getName() {

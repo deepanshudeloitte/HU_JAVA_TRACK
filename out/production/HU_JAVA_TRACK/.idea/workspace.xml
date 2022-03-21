@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2d82f44-334a-428e-a02c-c75b572831ea" name="Changes" comment="" />
+    <list default="true" id="a2d82f44-334a-428e-a02c-c75b572831ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EmployeeManagment/Employe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileHandling/dataHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileHandling/dataHandling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HU_JAVA_TRACK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HU_JAVA_TRACK.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HU_JAVA_TRACK/FileHandling/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HU_JAVA_TRACK/FileHandling/Candidate.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,18 +42,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/mysql-connector-java-8.0.28/mysql-connector-java-8.0.28/mysql-connector-java-8.0.28.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.anagram">
-    <configuration name="anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="anagrams_string.anagram" />
+  <component name="RunManager" selected="Application.Employe">
+    <configuration name="Employe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EmployeeManagment.Employe" />
       <module name="HU_JAVA_TRACK" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="anagrams_string.*" />
+          <option name="PATTERN" value="EmployeeManagment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,12 +61,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.array" />
+    <configuration name="Finally" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finally_block.Finally" />
       <module name="HU_JAVA_TRACK" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="finally_block.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="reverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reverse_of_a_list.reverseString" />
+    <configuration name="animal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Animal.animal" />
       <module name="HU_JAVA_TRACK" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reverse_of_a_list.*" />
+          <option name="PATTERN" value="Animal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +87,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="string" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.string" />
+    <configuration name="dataHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileHandling.dataHandling" />
       <module name="HU_JAVA_TRACK" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="FileHandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="passwordValidation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="passwordValidation.passwordValidation" />
+      <module name="HU_JAVA_TRACK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="passwordValidation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,10 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.anagram" />
-        <item itemvalue="Application.reverseString" />
-        <item itemvalue="Application.string" />
-        <item itemvalue="Application.array" />
+        <item itemvalue="Application.Employe" />
+        <item itemvalue="Application.animal" />
+        <item itemvalue="Application.dataHandling" />
+        <item itemvalue="Application.passwordValidation" />
+        <item itemvalue="Application.Finally" />
       </list>
     </recent_temporary>
   </component>
