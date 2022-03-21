@@ -1,3 +1,4 @@
+package Animal;
 public class animal {
     public static void main(String[] args) {
         //Two types of monkey defined by name and color monkey1 and monkey2 respectively
