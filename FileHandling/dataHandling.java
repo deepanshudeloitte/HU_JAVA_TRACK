@@ -29,14 +29,14 @@ public class dataHandling {
 }
 
 class Candidate {
-    private String name, regNo10, regNo12, btechRegNo;
+    private String name, rgN10, rgN12, btRgNo;
     private int rank;
 
     public Candidate(String name, String regNo10, String regNo12, String btechRegNo, int rank) {
         this.name = name;
-        this.regNo10 = regNo10;
-        this.regNo12 = regNo12;
-        this.btechRegNo = btechRegNo;
+        this.rgN10 = regNo10;
+        this.rgN12 = regNo12;
+        this.btRgNo = btechRegNo;
         this.rank = rank;
 
 
@@ -56,15 +56,15 @@ class Candidate {
     }
 
     public String getRegNo10() {
-        return regNo10;
+        return rgN10;
     }
 
-    public String getRegNo12() {
-        return regNo12;
+    public String getRgNo12() {
+        return rgN12;
     }
 
     public String getBtechRegNo() {
-        return btechRegNo;
+        return btRgNo;
     }
 
     public int getRank() {
@@ -73,6 +73,6 @@ class Candidate {
 
     
     public String toString() {
-        return name + " " + regNo10 + " " + getRegNo12() + " " + btechRegNo + " " + rank;
+        return name + " " + rgN10 + " " + getRgNo12() + " " + btRgNo + " " + rank;
     }
 }
