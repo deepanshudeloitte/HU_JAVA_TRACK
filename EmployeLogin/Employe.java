@@ -1,4 +1,5 @@
-package EmployeeManagment;
+package EmployeLogin;
+
 import java.sql.*;
 import java.util.*;
 
@@ -15,10 +16,11 @@ public class Employe {
             switch (menu) {
                 case 1 -> {
                     boolean result = login();
-                    if (result) {
+                    if(result) {
                         System.out.print("Login success");
                     } else {
-                        System.out.print("Login failed");
+                        System.out.print("Login failed 11 ");
+                        System.out.println("");
                     }
                 }
                 case 2 -> signup();
@@ -39,7 +41,7 @@ public class Employe {
         password=scn.nextLine();
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/","root","Dps12345701@");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employe","root","Dps12345701@");
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("Select *from login");
 
@@ -49,10 +51,12 @@ public class Employe {
                 pass = rs.getString(2);
 
             }
-            if(id.equals(id1)&& password.equals(pass))
-                loginSuccesfull= true;
-            else
-                loginSuccesfull= false;
+            if(id.equals(id1) && password.equals(pass)) {
+                loginSuccesfull = true;
+            }
+            else {
+                loginSuccesfull = false;
+            }
         }catch(Exception e){
             System.out.print(e);
 
@@ -81,7 +85,7 @@ public class Employe {
                 name = data.nextLine();
                 try{
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/","root","Dps12345701@");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employe","root","Dps12345701@");
                     String query = "insert into signup(id,password,name)"+ "values(?,?,?)";
                     String query1 = "insert into login(id,password)"+ "values(?,?)";
                     PreparedStatement ps = con.prepareStatement(query);
@@ -97,10 +101,10 @@ public class Employe {
                     ps1.executeUpdate();
 
                     if(i>0){
-                        System.out.print("\n\n Data Inserted..");
+                        System.out.print("\n\n Data Inserted..\n\n");
                     }
                     else{
-                        System.out.print("\n\n Data not Inserted..");
+                        System.out.print("\n\n Data not Inserted..\n\n");
                     }
 
                 }catch(Exception e){
@@ -110,7 +114,7 @@ public class Employe {
 
             }
             else{
-            System.out.print("wrong pin code");
+            System.out.print("wrong pin code\n\n");
 
            }
         }
